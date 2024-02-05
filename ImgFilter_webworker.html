@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing Tool</title>
+    <style>
+        .imgholder,.input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2px 2px;
+        }
+
+        canvas {
+            height: 40vh;
+        }
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        body{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Image Processing By Web Worker in js</h1>
+    <div id="imageprocessing">
+        <div class="input">
+            <label>Select Image:</Select></label>
+            <input type="file" id="fileInput"><br>
+            <button id="applyFilterButton">Apply Filter</button>
+        </div>
+        <div id="actualimg" class="imgholder">
+            <canvas id="originalCanvas"></canvas>
+        </div>
+        <div id="modifiedimg" class="imgholder">
+            <canvas id="filteredCanvas"></canvas>
+        </div>
+    
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>
